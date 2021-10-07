@@ -1,6 +1,6 @@
 # mobile-visual-shader-editor
 一款跨平台着色器编辑工具
-1.<a href="https://github.com/zwluoqi/mobile-visual-shader-editor/wiki/Visual-Shader">实现原理&说明</a></br>
+<a href="https://github.com/zwluoqi/mobile-visual-shader-editor/wiki/Visual-Shader">实现原理&说明</a></br>
 
 ## 依赖项&参考项
 1.<a href="https://github.com/bkaradzic/bgfx">BGFX</a> 一款跨平台渲染器</br>

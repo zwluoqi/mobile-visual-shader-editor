@@ -1,0 +1,13 @@
+vec3 GPU_WORLD_POSITION:POSITION=vec3(0.0,0.0,0.0);
+vec3 VERTEX_CD_MTFACE:TEXCOORD0=vec3(0.0,0.0,0.0);
+vec3 VERTEX_CD_ORCO:TEXCOORD1=vec3(0.0,0.0,0.0);
+vec3 GPU_WORLD_NORMAL:TEXCOORD2=vec3(0.0,0.0,0.0);
+vec4 VERTEX_CD_TANGENT:TEXCOORD3=vec4(0.0,0.0,0.0,0.0);
+mat4 vWorldToLight:TEXCOORD4=0.0;
+vec4 vPositionFromLight:TEXCOORD5=vec4(0.0,0.0,0.0,0.0);
+
+
+vec3 a_position:POSITION;
+vec2 a_texcoord0:TEXCOORD0;
+vec3 a_normal:NORMAL;
+vec4 a_tangent:TANGENT;

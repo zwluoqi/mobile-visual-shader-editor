@@ -1,0 +1,10 @@
+vec3 GPU_WORLD_POSITION:TEXCOORD1;
+vec3 VERTEX_CD_MTFACE:TEXCOORD2;
+vec3 GPU_WORLD_NORMAL:TEXCOORD3;
+mat4 vWorldToLight:TEXCOORD4;
+vec4 vPositionFromLight:TEXCOORD5;
+
+
+vec3 a_position:POSITION;
+vec2 a_texcoord0:TEXCOORD0;
+vec3 a_normal:NORMAL;

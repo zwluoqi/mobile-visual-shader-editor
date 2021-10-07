@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342FD600A012E540A915137D /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E35382A2CF632E73381D9391 /* shader.cpp */; };
+		1BDD349B87F51BC550A2AB5E /* shader.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF1ACDF9616FC5FBF61E1EF /* shader.h */; };
+		F8DD715FE42F494FCD4E865F /* shader_dx9bc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A064C8968CB5B3D8B519A29A /* shader_dx9bc.cpp */; };
+		5F44A6334B2B682BF47BCE48 /* shader_dx9bc.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9954A91A7D63E923809125 /* shader_dx9bc.h */; };
+		2363F8FB8F27F7EB588D27B6 /* shader_dxbc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2191AB7BE6A05F9E7CEF3BA /* shader_dxbc.cpp */; };
+		8ABA3603F673A1AD7FD3BB87 /* shader_dxbc.h in Headers */ = {isa = PBXBuildFile; fileRef = 19191CD0053FE636EE846B02 /* shader_dxbc.h */; };
+		5AED679E463F3F8E2F5E7C9E /* shader_spirv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CD610BF53BB78A3E25728A /* shader_spirv.cpp */; };
+		182A8E950411508DAD61B6AA /* shader_spirv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5013E41FBCF6F25FC5F9209C /* shader_spirv.h */; };
+		079BDD42F3ECB432DC0BF242 /* vertexlayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16FB8B248269E1A3CB529CA3 /* vertexlayout.cpp */; };
+		AE71916F9A58536743A9B984 /* vertexlayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D799BED095DAA2D1260D869 /* vertexlayout.h */; };
+		FD1C30F26982C378F25A6551 /* shaderc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC767F1998C8560981E79319 /* shaderc.cpp */; };
+		9B549E78076F011A509111AE /* shaderc.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B0C870DF978A6888E8F085 /* shaderc.h */; };
+		2933750115DCDC303E72F8AF /* shaderc_glsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8A83219240EC69FADE66778 /* shaderc_glsl.cpp */; };
+		4C6E9FC0381707F061AD226F /* shaderc_hlsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBA10FFE6707A384F0DF445D /* shaderc_hlsl.cpp */; };
+		0E0890707ACEEC8CC3297BEF /* shaderc_metal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D169E4B49299EA4F2127B91 /* shaderc_metal.cpp */; };
+		DF800ECECB2976FDF4BF917C /* shaderc_pssl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C81F81A72147FA34AB657 /* shaderc_pssl.cpp */; };
+		AA936BEC165AC8085FB5566B /* shaderc_spirv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2F2366B8E0537C437EF13B1 /* shaderc_spirv.cpp */; };
+		A766BA1A13D50F9A5CBECA99 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5613C26042CEB10CEB852A57 /* Cocoa.framework */; };
+		D30EE3EC3FD53F098830CE6B /* libbxDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82554F416E684F9A17522C87 /* libbxDebug.a */; };
+		636F1FA14FED6F3A38E52DD2 /* libfcppDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92545516FE6EB8B74791C84B /* libfcppDebug.a */; };
+		F96ED401658BC6F22E633360 /* libglslangDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 081A821EF4C2E94D1D5905CD /* libglslangDebug.a */; };
+		C5A28795310C1DF8BA4FCBA2 /* libglsl-optimizerDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE6BA6CC9BC416AB2665CBD /* libglsl-optimizerDebug.a */; };
+		31D8F43C9D4A3759E6DE6CDD /* libspirv-optDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 003428A2EC72D21D95F5AE4F /* libspirv-optDebug.a */; };
+		4760EB5733CBAB63DCE610C9 /* libspirv-crossDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 161A049C8201EF918BEFF00D /* libspirv-crossDebug.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7E9198DD3BE6140FC6DA13C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7D0CFDD826742C01BD8FAB /* bx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5D335834140F17D0A3489DB;
+			remoteInfo = "libbxDebug.a";
+		};
+		4122D4582DF71B0C56A65B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7D0CFDD826742C01BD8FAB /* bx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B1D4BC607ACD48FB0CAE88A;
+			remoteInfo = "libbxDebug.a";
+		};
+		74A4FE15E061A74C692C93B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06E5A2C3C8002D3C5D19412 /* fcpp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8491023EF0C84AD5F9D2AEF8;
+			remoteInfo = "libfcppDebug.a";
+		};
+		0E712C557A2ED58B03F9C0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06E5A2C3C8002D3C5D19412 /* fcpp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EA608F38D65AB88ABFC74E9B;
+			remoteInfo = "libfcppDebug.a";
+		};
+		C19D2078AD89B8E71600783A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6C90A3E92899BE2FBA683ED /* glslang.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3949EEC8FA44ABDF85DAFDB;
+			remoteInfo = "libglslangDebug.a";
+		};
+		BB66041DA7529C8C10C95BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6C90A3E92899BE2FBA683ED /* glslang.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 29FC173695BE4BC0DE6EDA4C;
+			remoteInfo = "libglslangDebug.a";
+		};
+		7631E7EA628A576E8B843908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB620B56E78F57871071FA97 /* glsl-optimizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DF3A8F7A961FE76F24AB976;
+			remoteInfo = "libglsl-optimizerDebug.a";
+		};
+		50D3D1753C2C42F965262493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB620B56E78F57871071FA97 /* glsl-optimizer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83EFA30F6F408F5198A47D13;
+			remoteInfo = "libglsl-optimizerDebug.a";
+		};
+		821C5C1B6E1EA02B57A19624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E39C9730A0F5071F3B86AC4 /* spirv-opt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF73A921BB2E99CD64E61118;
+			remoteInfo = "libspirv-optDebug.a";
+		};
+		BC215A24A8239E3491A6942D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E39C9730A0F5071F3B86AC4 /* spirv-opt.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D5A56D2041B39B06CA9997F1;
+			remoteInfo = "libspirv-optDebug.a";
+		};
+		78AB0FBDE475E1172D7CE03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD29FB8849480F5692151568 /* spirv-cross.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A658E212927EAC797BC43145;
+			remoteInfo = "libspirv-crossDebug.a";
+		};
+		F2FCA7995EC779F4A7CD7819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD29FB8849480F5692151568 /* spirv-cross.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CCCB21BB38E408E50191987E;
+			remoteInfo = "libspirv-crossDebug.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E35382A2CF632E73381D9391 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shader.cpp"; path = "shader.cpp"; sourceTree = "<group>"; };
+		AAF1ACDF9616FC5FBF61E1EF /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "shader.h"; path = "shader.h"; sourceTree = "<group>"; };
+		A064C8968CB5B3D8B519A29A /* shader_dx9bc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shader_dx9bc.cpp"; path = "shader_dx9bc.cpp"; sourceTree = "<group>"; };
+		AE9954A91A7D63E923809125 /* shader_dx9bc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "shader_dx9bc.h"; path = "shader_dx9bc.h"; sourceTree = "<group>"; };
+		D2191AB7BE6A05F9E7CEF3BA /* shader_dxbc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shader_dxbc.cpp"; path = "shader_dxbc.cpp"; sourceTree = "<group>"; };
+		19191CD0053FE636EE846B02 /* shader_dxbc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "shader_dxbc.h"; path = "shader_dxbc.h"; sourceTree = "<group>"; };
+		89CD610BF53BB78A3E25728A /* shader_spirv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shader_spirv.cpp"; path = "shader_spirv.cpp"; sourceTree = "<group>"; };
+		5013E41FBCF6F25FC5F9209C /* shader_spirv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "shader_spirv.h"; path = "shader_spirv.h"; sourceTree = "<group>"; };
+		16FB8B248269E1A3CB529CA3 /* vertexlayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "vertexlayout.cpp"; path = "vertexlayout.cpp"; sourceTree = "<group>"; };
+		9D799BED095DAA2D1260D869 /* vertexlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "vertexlayout.h"; path = "vertexlayout.h"; sourceTree = "<group>"; };
+		AC767F1998C8560981E79319 /* shaderc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shaderc.cpp"; path = "shaderc.cpp"; sourceTree = "<group>"; };
+		F3B0C870DF978A6888E8F085 /* shaderc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "shaderc.h"; path = "shaderc.h"; sourceTree = "<group>"; };
+		B8A83219240EC69FADE66778 /* shaderc_glsl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shaderc_glsl.cpp"; path = "shaderc_glsl.cpp"; sourceTree = "<group>"; };
+		FBA10FFE6707A384F0DF445D /* shaderc_hlsl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shaderc_hlsl.cpp"; path = "shaderc_hlsl.cpp"; sourceTree = "<group>"; };
+		5D169E4B49299EA4F2127B91 /* shaderc_metal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shaderc_metal.cpp"; path = "shaderc_metal.cpp"; sourceTree = "<group>"; };
+		AE0C81F81A72147FA34AB657 /* shaderc_pssl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shaderc_pssl.cpp"; path = "shaderc_pssl.cpp"; sourceTree = "<group>"; };
+		A2F2366B8E0537C437EF13B1 /* shaderc_spirv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shaderc_spirv.cpp"; path = "shaderc_spirv.cpp"; sourceTree = "<group>"; };
+		5613C26042CEB10CEB852A57 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "/System/Library/Frameworks/Cocoa.framework"; sourceTree = "<absolute>"; };
+		8F321F7AFB9EDA74C49272D2 /* shadercDebug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "shadercDebug"; path = "shadercDebug"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7D0CFDD826742C01BD8FAB /* bx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "bx.xcodeproj"; path = "bx.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		D06E5A2C3C8002D3C5D19412 /* fcpp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fcpp.xcodeproj"; path = "fcpp.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		A6C90A3E92899BE2FBA683ED /* glslang.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "glslang.xcodeproj"; path = "glslang.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		FB620B56E78F57871071FA97 /* glsl-optimizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "glsl-optimizer.xcodeproj"; path = "glsl-optimizer.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		1E39C9730A0F5071F3B86AC4 /* spirv-opt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "spirv-opt.xcodeproj"; path = "spirv-opt.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		DD29FB8849480F5692151568 /* spirv-cross.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "spirv-cross.xcodeproj"; path = "spirv-cross.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2603AE2D9273B0A65B922A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A766BA1A13D50F9A5CBECA99 /* Cocoa.framework in Frameworks */,
+				D30EE3EC3FD53F098830CE6B /* libbxDebug.a in Frameworks */,
+				636F1FA14FED6F3A38E52DD2 /* libfcppDebug.a in Frameworks */,
+				F96ED401658BC6F22E633360 /* libglslangDebug.a in Frameworks */,
+				C5A28795310C1DF8BA4FCBA2 /* libglsl-optimizerDebug.a in Frameworks */,
+				31D8F43C9D4A3759E6DE6CDD /* libspirv-optDebug.a in Frameworks */,
+				4760EB5733CBAB63DCE610C9 /* libspirv-crossDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCE0FDFE4842DB0CD1AF21BF /* shaderc */ = {
+			isa = PBXGroup;
+			children = (
+				0B45AADF77D017A480E19A98 /* src */,
+				873EEAD57322AB2BDC82A57E /* tools */,
+				55FB6783C132B01ACA3C143E /* Frameworks */,
+				8B49A3E6F7B55EE1C0A9F63E /* Products */,
+				A21274240E7F2F1FD772C77C /* Projects */,
+			);
+			name = "shaderc";
+			path = ".";
+			sourceTree = "<group>";
+		};
+		0B45AADF77D017A480E19A98 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E35382A2CF632E73381D9391 /* shader.cpp */,
+				AAF1ACDF9616FC5FBF61E1EF /* shader.h */,
+				A064C8968CB5B3D8B519A29A /* shader_dx9bc.cpp */,
+				AE9954A91A7D63E923809125 /* shader_dx9bc.h */,
+				D2191AB7BE6A05F9E7CEF3BA /* shader_dxbc.cpp */,
+				19191CD0053FE636EE846B02 /* shader_dxbc.h */,
+				89CD610BF53BB78A3E25728A /* shader_spirv.cpp */,
+				5013E41FBCF6F25FC5F9209C /* shader_spirv.h */,
+				16FB8B248269E1A3CB529CA3 /* vertexlayout.cpp */,
+				9D799BED095DAA2D1260D869 /* vertexlayout.h */,
+			);
+			name = "src";
+			path = "../../../src";
+			sourceTree = "<group>";
+		};
+		873EEAD57322AB2BDC82A57E /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				912DE5957D3D9166E6F6F584 /* shaderc */,
+			);
+			name = "tools";
+			path = "../../../tools";
+			sourceTree = "<group>";
+		};
+		912DE5957D3D9166E6F6F584 /* shaderc */ = {
+			isa = PBXGroup;
+			children = (
+				AC767F1998C8560981E79319 /* shaderc.cpp */,
+				F3B0C870DF978A6888E8F085 /* shaderc.h */,
+				B8A83219240EC69FADE66778 /* shaderc_glsl.cpp */,
+				FBA10FFE6707A384F0DF445D /* shaderc_hlsl.cpp */,
+				5D169E4B49299EA4F2127B91 /* shaderc_metal.cpp */,
+				AE0C81F81A72147FA34AB657 /* shaderc_pssl.cpp */,
+				A2F2366B8E0537C437EF13B1 /* shaderc_spirv.cpp */,
+			);
+			name = "shaderc";
+			path = "shaderc";
+			sourceTree = "<group>";
+		};
+		55FB6783C132B01ACA3C143E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5613C26042CEB10CEB852A57 /* Cocoa.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		8B49A3E6F7B55EE1C0A9F63E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F321F7AFB9EDA74C49272D2 /* shadercDebug */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		A21274240E7F2F1FD772C77C /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				EC7D0CFDD826742C01BD8FAB /* bx.xcodeproj */,
+				D06E5A2C3C8002D3C5D19412 /* fcpp.xcodeproj */,
+				A6C90A3E92899BE2FBA683ED /* glslang.xcodeproj */,
+				FB620B56E78F57871071FA97 /* glsl-optimizer.xcodeproj */,
+				1E39C9730A0F5071F3B86AC4 /* spirv-opt.xcodeproj */,
+				DD29FB8849480F5692151568 /* spirv-cross.xcodeproj */,
+			);
+			name = "Projects";
+			path = ".";
+			sourceTree = "<group>";
+		};
+		266B6C6F925257659B4059E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82554F416E684F9A17522C87 /* libbxDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D37BFB12BF3B8CB7285974C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92545516FE6EB8B74791C84B /* libfcppDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		200F35688C2D4935D5FA4E47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081A821EF4C2E94D1D5905CD /* libglslangDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5543CEC1C12EE122CA07E89B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDE6BA6CC9BC416AB2665CBD /* libglsl-optimizerDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8185070DEDF99C6AB643EA79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				003428A2EC72D21D95F5AE4F /* libspirv-optDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7749081B6376544C8C57F75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				161A049C8201EF918BEFF00D /* libspirv-crossDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		958CC6CD811B50972A3A6492 /* shaderc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E282B81D4EF3BA961712351F /* Build configuration list for PBXNativeTarget "shaderc" */;
+			buildPhases = (
+				04930A2370030D9C39228724 /* Resources */,
+				3C695C28A8D95EA171F8D829 /* Sources */,
+				2603AE2D9273B0A65B922A2F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BED0AE7EA5BBA48793BD20 /* PBXTargetDependency */,
+				363A805A22FA10FF8B17F909 /* PBXTargetDependency */,
+				EC5757BB58766B88A143719A /* PBXTargetDependency */,
+				C1424EFB2D2E615C360768D5 /* PBXTargetDependency */,
+				0DEB14AF795FAA0C42A9F71B /* PBXTargetDependency */,
+				C3FB3A73AF2887A4D8092AB5 /* PBXTargetDependency */,
+			);
+			name = "shaderc";
+			productInstallPath = "$(HOME)/bin";
+			productName = "shaderc";
+			productReference = 8F321F7AFB9EDA74C49272D2 /* shadercDebug */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "shaderc" */;
+			compatibilityVersion = "Xcode 8.0";
+			hasScannedForEncodings = 1;
+			mainGroup = DCE0FDFE4842DB0CD1AF21BF /* shaderc */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 266B6C6F925257659B4059E1 /* Products */;
+					ProjectRef = EC7D0CFDD826742C01BD8FAB /* bx.xcodeproj */;
+				},
+				{
+					ProductGroup = D37BFB12BF3B8CB7285974C2 /* Products */;
+					ProjectRef = D06E5A2C3C8002D3C5D19412 /* fcpp.xcodeproj */;
+				},
+				{
+					ProductGroup = 200F35688C2D4935D5FA4E47 /* Products */;
+					ProjectRef = A6C90A3E92899BE2FBA683ED /* glslang.xcodeproj */;
+				},
+				{
+					ProductGroup = 5543CEC1C12EE122CA07E89B /* Products */;
+					ProjectRef = FB620B56E78F57871071FA97 /* glsl-optimizer.xcodeproj */;
+				},
+				{
+					ProductGroup = 8185070DEDF99C6AB643EA79 /* Products */;
+					ProjectRef = 1E39C9730A0F5071F3B86AC4 /* spirv-opt.xcodeproj */;
+				},
+				{
+					ProductGroup = 7749081B6376544C8C57F75C /* Products */;
+					ProjectRef = DD29FB8849480F5692151568 /* spirv-cross.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				958CC6CD811B50972A3A6492 /* shadercDebug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		82554F416E684F9A17522C87 /* libbxDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../../bx/scripts/libbxDebug.a";
+			remoteRef = E7E9198DD3BE6140FC6DA13C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		92545516FE6EB8B74791C84B /* libfcppDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../scripts/libfcppDebug.a";
+			remoteRef = 74A4FE15E061A74C692C93B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		081A821EF4C2E94D1D5905CD /* libglslangDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../scripts/libglslangDebug.a";
+			remoteRef = C19D2078AD89B8E71600783A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDE6BA6CC9BC416AB2665CBD /* libglsl-optimizerDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../scripts/libglsl-optimizerDebug.a";
+			remoteRef = 7631E7EA628A576E8B843908 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		003428A2EC72D21D95F5AE4F /* libspirv-optDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../scripts/libspirv-optDebug.a";
+			remoteRef = 821C5C1B6E1EA02B57A19624 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		161A049C8201EF918BEFF00D /* libspirv-crossDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../scripts/libspirv-crossDebug.a";
+			remoteRef = 78AB0FBDE475E1172D7CE03C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04930A2370030D9C39228724 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C695C28A8D95EA171F8D829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342FD600A012E540A915137D /* shader.cpp in Sources */,
+				F8DD715FE42F494FCD4E865F /* shader_dx9bc.cpp in Sources */,
+				2363F8FB8F27F7EB588D27B6 /* shader_dxbc.cpp in Sources */,
+				5AED679E463F3F8E2F5E7C9E /* shader_spirv.cpp in Sources */,
+				079BDD42F3ECB432DC0BF242 /* vertexlayout.cpp in Sources */,
+				FD1C30F26982C378F25A6551 /* shaderc.cpp in Sources */,
+				2933750115DCDC303E72F8AF /* shaderc_glsl.cpp in Sources */,
+				4C6E9FC0381707F061AD226F /* shaderc_hlsl.cpp in Sources */,
+				0E0890707ACEEC8CC3297BEF /* shaderc_metal.cpp in Sources */,
+				DF800ECECB2976FDF4BF917C /* shaderc_pssl.cpp in Sources */,
+				AA936BEC165AC8085FB5566B /* shaderc_spirv.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		12BED0AE7EA5BBA48793BD20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libbxDebug.a";
+			targetProxy = 4122D4582DF71B0C56A65B08 /* PBXContainerItemProxy */;
+		};
+		363A805A22FA10FF8B17F909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libfcppDebug.a";
+			targetProxy = 0E712C557A2ED58B03F9C0F3 /* PBXContainerItemProxy */;
+		};
+		EC5757BB58766B88A143719A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libglslangDebug.a";
+			targetProxy = BB66041DA7529C8C10C95BDF /* PBXContainerItemProxy */;
+		};
+		C1424EFB2D2E615C360768D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libglsl-optimizerDebug.a";
+			targetProxy = 50D3D1753C2C42F965262493 /* PBXContainerItemProxy */;
+		};
+		0DEB14AF795FAA0C42A9F71B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libspirv-optDebug.a";
+			targetProxy = BC215A24A8239E3491A6942D /* PBXContainerItemProxy */;
+		};
+		C3FB3A73AF2887A4D8092AB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libspirv-crossDebug.a";
+			targetProxy = F2FCA7995EC779F4A7CD7819 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C59AC10831B3A832FA5F38CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../scripts;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = shadercDebug;
+			};
+			name = Debug;
+		};
+		3FD7EE75ABBAFDB5B4BD2BF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../scripts;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = shadercRelease;
+			};
+			name = Release;
+		};
+		0E26DC59FA61DFC36374F7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../bx/include/compat/osx,
+					../../../../bx/include,
+					../../../../bimg/include,
+					../../../include,
+					../../../3rdparty/webgpu/include,
+					../../../3rdparty/dxsdk/include,
+					../../../3rdparty/fcpp,
+					../../../3rdparty/glslang/glslang/Public,
+					../../../3rdparty/glslang/glslang/Include,
+					../../../3rdparty/glslang,
+					"../../../3rdparty/glsl-optimizer/include",
+					"../../../3rdparty/glsl-optimizer/src/glsl",
+					"../../../3rdparty/spirv-cross",
+					"../../../3rdparty/spirv-tools/include",
+				);
+				OBJROOT = obj/Debug/shaderc;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_LDFLAGS = (
+					"-lpthread",
+				);
+				SDKROOT = macosx;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../scripts;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		295875FA153F37F2BE8F9D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../bx/include/compat/osx,
+					../../../../bx/include,
+					../../../../bimg/include,
+					../../../include,
+					../../../3rdparty/webgpu/include,
+					../../../3rdparty/dxsdk/include,
+					../../../3rdparty/fcpp,
+					../../../3rdparty/glslang/glslang/Public,
+					../../../3rdparty/glslang/glslang/Include,
+					../../../3rdparty/glslang,
+					"../../../3rdparty/glsl-optimizer/include",
+					"../../../3rdparty/glsl-optimizer/src/glsl",
+					"../../../3rdparty/spirv-cross",
+					"../../../3rdparty/spirv-tools/include",
+				);
+				OBJROOT = obj/Release/shaderc;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_LDFLAGS = (
+					"-lpthread",
+				);
+				SDKROOT = macosx;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../scripts;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E282B81D4EF3BA961712351F /* Build configuration list for PBXNativeTarget "shadercDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59AC10831B3A832FA5F38CC /* Debug */,
+				3FD7EE75ABBAFDB5B4BD2BF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "shaderc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E26DC59FA61DFC36374F7BA /* Debug */,
+				295875FA153F37F2BE8F9D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = __RootObject_ /* Project object */;
+}

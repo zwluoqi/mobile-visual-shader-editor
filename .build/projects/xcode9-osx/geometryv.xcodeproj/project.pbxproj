@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31D7F7AB1D805FDB46167B5A /* fs_mesh.bin.h in Headers */ = {isa = PBXBuildFile; fileRef = E027ED834C8D800AD56522E3 /* fs_mesh.bin.h */; };
+		2CC944DA988FA1F6E1EA2F59 /* geometryv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5425AD11C08A40984963E270 /* geometryv.cpp */; };
+		AF9F421A1B669F3664C12D99 /* vs_mesh.bin.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E291BF58A3C1B4E3326F83A /* vs_mesh.bin.h */; };
+		E3EC96F24F562C55D899DAFF /* libexample-commonDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D25C240ABE32AB07A7DCC55A /* libexample-commonDebug.a */; };
+		0F90B730FB26FAE5A4DB70E6 /* libbimg_decodeDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBB29CB4A4F8B795336FB2F /* libbimg_decodeDebug.a */; };
+		3A13A1EAA6FA8BE0AFE88D5C /* libbimgDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5C342F558B9EA5E1D139F /* libbimgDebug.a */; };
+		54434DF9C07EADBCC9732A4C /* libbgfxDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3ADF194CF15B8623881CC78 /* libbgfxDebug.a */; };
+		2BABBE9797711BB4E0CCA916 /* libbxDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DADA89CCC6ED89256FD76612 /* libbxDebug.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54C821194021929C691B7436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9FB43E5C5289016EE093327 /* example-common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D8CE35A09FB38DA52E4F3D9;
+			remoteInfo = "libexample-commonDebug.a";
+		};
+		2E6A0CA41AC37C2743BD5EC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9FB43E5C5289016EE093327 /* example-common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DC407FCF2D2CC1F8911A83;
+			remoteInfo = "libexample-commonDebug.a";
+		};
+		27432A92930DFCECDC13FB11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43C9B6F5AFE7CAC2F8B4D0D4 /* bimg_decode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D6367F06989315752CFB622;
+			remoteInfo = "libbimg_decodeDebug.a";
+		};
+		A194C26E0D5F94C9566593EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43C9B6F5AFE7CAC2F8B4D0D4 /* bimg_decode.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C35735362F701C60F81CACF9;
+			remoteInfo = "libbimg_decodeDebug.a";
+		};
+		E90E99AFD57959BB7E95BE20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEBDC9269AFC73A2437F50D4 /* bimg.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5ACAB1E8C601FA7FCF0B5EA3;
+			remoteInfo = "libbimgDebug.a";
+		};
+		83DBC6EE6F4687FA1862EC5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEBDC9269AFC73A2437F50D4 /* bimg.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D72F0FECD05861D53DEF71;
+			remoteInfo = "libbimgDebug.a";
+		};
+		C5F118B3B15CD9BE5A783E24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FB48D20D3AF34DB6BCCF7F /* bgfx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 02DC17D86E13606F771DC492;
+			remoteInfo = "libbgfxDebug.a";
+		};
+		F6DB19A4E246DAAF8B623F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FB48D20D3AF34DB6BCCF7F /* bgfx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A853C66B944DEFBD7DBA85CE;
+			remoteInfo = "libbgfxDebug.a";
+		};
+		68677E15543CC6C87DEB05C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44EF39023098A131592EBDB0 /* bx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5D335834140F17D0A3489DB;
+			remoteInfo = "libbxDebug.a";
+		};
+		996BA9338540F1E6AEEF30E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44EF39023098A131592EBDB0 /* bx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B1D4BC607ACD48FB0CAE88A;
+			remoteInfo = "libbxDebug.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E027ED834C8D800AD56522E3 /* fs_mesh.bin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "fs_mesh.bin.h"; path = "fs_mesh.bin.h"; sourceTree = "<group>"; };
+		E96600B5D5E3F3F7FE60F40B /* fs_mesh.sc */ = {isa = PBXFileReference; lastKnownFileType = text; name = "fs_mesh.sc"; path = "fs_mesh.sc"; sourceTree = "<group>"; };
+		5425AD11C08A40984963E270 /* geometryv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "geometryv.cpp"; path = "geometryv.cpp"; sourceTree = "<group>"; };
+		A8BE030D144EC5F71D4AA60F /* makefile */ = {isa = PBXFileReference; lastKnownFileType = text; name = "makefile"; path = "makefile"; sourceTree = "<group>"; };
+		6CF91282D86915FBA1888F83 /* varying.def.sc */ = {isa = PBXFileReference; lastKnownFileType = text; name = "varying.def.sc"; path = "varying.def.sc"; sourceTree = "<group>"; };
+		9E291BF58A3C1B4E3326F83A /* vs_mesh.bin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "vs_mesh.bin.h"; path = "vs_mesh.bin.h"; sourceTree = "<group>"; };
+		67918172D3ABE4131CCEF4A7 /* vs_mesh.sc */ = {isa = PBXFileReference; lastKnownFileType = text; name = "vs_mesh.sc"; path = "vs_mesh.sc"; sourceTree = "<group>"; };
+		776623D0E39D6B67ECA7CF8A /* geometryvDebug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "geometryvDebug"; path = "geometryvDebug"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FB43E5C5289016EE093327 /* example-common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "example-common.xcodeproj"; path = "example-common.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		43C9B6F5AFE7CAC2F8B4D0D4 /* bimg_decode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "bimg_decode.xcodeproj"; path = "bimg_decode.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		AEBDC9269AFC73A2437F50D4 /* bimg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "bimg.xcodeproj"; path = "bimg.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		21FB48D20D3AF34DB6BCCF7F /* bgfx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "bgfx.xcodeproj"; path = "bgfx.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		44EF39023098A131592EBDB0 /* bx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "bx.xcodeproj"; path = "bx.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C04266598CA8281E12511E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EC96F24F562C55D899DAFF /* libexample-commonDebug.a in Frameworks */,
+				0F90B730FB26FAE5A4DB70E6 /* libbimg_decodeDebug.a in Frameworks */,
+				3A13A1EAA6FA8BE0AFE88D5C /* libbimgDebug.a in Frameworks */,
+				54434DF9C07EADBCC9732A4C /* libbgfxDebug.a in Frameworks */,
+				2BABBE9797711BB4E0CCA916 /* libbxDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECE125AC58196E436123D266 /* geometryv */ = {
+			isa = PBXGroup;
+			children = (
+				9C8487BF08E664CD9153AB7F /* tools */,
+				B2B7F93D1EEF41D527F9A5F8 /* Products */,
+				C980CA7B35B812133EC27636 /* Projects */,
+			);
+			name = "geometryv";
+			path = ".";
+			sourceTree = "<group>";
+		};
+		9C8487BF08E664CD9153AB7F /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				4E048E52BA1C757C83C90416 /* geometryv */,
+			);
+			name = "tools";
+			path = "../../../tools";
+			sourceTree = "<group>";
+		};
+		4E048E52BA1C757C83C90416 /* geometryv */ = {
+			isa = PBXGroup;
+			children = (
+				E027ED834C8D800AD56522E3 /* fs_mesh.bin.h */,
+				E96600B5D5E3F3F7FE60F40B /* fs_mesh.sc */,
+				5425AD11C08A40984963E270 /* geometryv.cpp */,
+				A8BE030D144EC5F71D4AA60F /* makefile */,
+				6CF91282D86915FBA1888F83 /* varying.def.sc */,
+				9E291BF58A3C1B4E3326F83A /* vs_mesh.bin.h */,
+				67918172D3ABE4131CCEF4A7 /* vs_mesh.sc */,
+			);
+			name = "geometryv";
+			path = "geometryv";
+			sourceTree = "<group>";
+		};
+		B2B7F93D1EEF41D527F9A5F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776623D0E39D6B67ECA7CF8A /* geometryvDebug */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		C980CA7B35B812133EC27636 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				D9FB43E5C5289016EE093327 /* example-common.xcodeproj */,
+				43C9B6F5AFE7CAC2F8B4D0D4 /* bimg_decode.xcodeproj */,
+				AEBDC9269AFC73A2437F50D4 /* bimg.xcodeproj */,
+				21FB48D20D3AF34DB6BCCF7F /* bgfx.xcodeproj */,
+				44EF39023098A131592EBDB0 /* bx.xcodeproj */,
+			);
+			name = "Projects";
+			path = ".";
+			sourceTree = "<group>";
+		};
+		737682F9DF61955AE83A9CD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25C240ABE32AB07A7DCC55A /* libexample-commonDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46274748325493795B35368A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB29CB4A4F8B795336FB2F /* libbimg_decodeDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8EB07AB14A9B0E19D739C49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09C5C342F558B9EA5E1D139F /* libbimgDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E368C270A011F9F96AFD60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3ADF194CF15B8623881CC78 /* libbgfxDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87BC8654F3A3714AFC9173C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADA89CCC6ED89256FD76612 /* libbxDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DE39FC869DDC81A524A5F2B /* geometryv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1EC640A1DB3C126660E5089 /* Build configuration list for PBXNativeTarget "geometryv" */;
+			buildPhases = (
+				13996CAB7F5FC9C7C8BA572A /* Resources */,
+				02CE1EC46E947BE0B7EF0943 /* Sources */,
+				2C04266598CA8281E12511E4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7502334B611594543A1C0D /* PBXTargetDependency */,
+				92D979A07E06C6D1A7E768E2 /* PBXTargetDependency */,
+				54630252C020AB8849EB96F0 /* PBXTargetDependency */,
+				67A1ED09D35E96405C2982A8 /* PBXTargetDependency */,
+				6A3CF6C4D623E1BADF11E336 /* PBXTargetDependency */,
+			);
+			name = "geometryv";
+			productInstallPath = "$(HOME)/bin";
+			productName = "geometryv";
+			productReference = 776623D0E39D6B67ECA7CF8A /* geometryvDebug */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "geometryv" */;
+			compatibilityVersion = "Xcode 8.0";
+			hasScannedForEncodings = 1;
+			mainGroup = ECE125AC58196E436123D266 /* geometryv */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 737682F9DF61955AE83A9CD3 /* Products */;
+					ProjectRef = D9FB43E5C5289016EE093327 /* example-common.xcodeproj */;
+				},
+				{
+					ProductGroup = 46274748325493795B35368A /* Products */;
+					ProjectRef = 43C9B6F5AFE7CAC2F8B4D0D4 /* bimg_decode.xcodeproj */;
+				},
+				{
+					ProductGroup = A8EB07AB14A9B0E19D739C49 /* Products */;
+					ProjectRef = AEBDC9269AFC73A2437F50D4 /* bimg.xcodeproj */;
+				},
+				{
+					ProductGroup = 04E368C270A011F9F96AFD60 /* Products */;
+					ProjectRef = 21FB48D20D3AF34DB6BCCF7F /* bgfx.xcodeproj */;
+				},
+				{
+					ProductGroup = 87BC8654F3A3714AFC9173C6 /* Products */;
+					ProjectRef = 44EF39023098A131592EBDB0 /* bx.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7DE39FC869DDC81A524A5F2B /* geometryvDebug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D25C240ABE32AB07A7DCC55A /* libexample-commonDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../scripts/libexample-commonDebug.a";
+			remoteRef = 54C821194021929C691B7436 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEBB29CB4A4F8B795336FB2F /* libbimg_decodeDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../../bimg/scripts/libbimg_decodeDebug.a";
+			remoteRef = 27432A92930DFCECDC13FB11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09C5C342F558B9EA5E1D139F /* libbimgDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../../bimg/scripts/libbimgDebug.a";
+			remoteRef = E90E99AFD57959BB7E95BE20 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3ADF194CF15B8623881CC78 /* libbgfxDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../scripts/libbgfxDebug.a";
+			remoteRef = C5F118B3B15CD9BE5A783E24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DADA89CCC6ED89256FD76612 /* libbxDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../../../bx/scripts/libbxDebug.a";
+			remoteRef = 68677E15543CC6C87DEB05C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13996CAB7F5FC9C7C8BA572A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02CE1EC46E947BE0B7EF0943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC944DA988FA1F6E1EA2F59 /* geometryv.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		DF7502334B611594543A1C0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libexample-commonDebug.a";
+			targetProxy = 2E6A0CA41AC37C2743BD5EC1 /* PBXContainerItemProxy */;
+		};
+		92D979A07E06C6D1A7E768E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libbimg_decodeDebug.a";
+			targetProxy = A194C26E0D5F94C9566593EE /* PBXContainerItemProxy */;
+		};
+		54630252C020AB8849EB96F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libbimgDebug.a";
+			targetProxy = 83DBC6EE6F4687FA1862EC5F /* PBXContainerItemProxy */;
+		};
+		67A1ED09D35E96405C2982A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libbgfxDebug.a";
+			targetProxy = F6DB19A4E246DAAF8B623F15 /* PBXContainerItemProxy */;
+		};
+		6A3CF6C4D623E1BADF11E336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libbxDebug.a";
+			targetProxy = 996BA9338540F1E6AEEF30E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD360F7E191A1EBE221D4CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../scripts;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = geometryvDebug;
+			};
+			name = Debug;
+		};
+		270D1375937B68F4DC6423F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../scripts;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = geometryvRelease;
+			};
+			name = Release;
+		};
+		9ECC89A38A1E6193733D9EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../bx/include/compat/osx,
+					../../../../bx/include,
+					../../../../bimg/include,
+					../../../include,
+					../../../3rdparty,
+					../../../examples/common,
+				);
+				OBJROOT = obj/Debug/geometryv;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_LDFLAGS = (
+					"-framework Cocoa",
+					"-framework Metal",
+					"-framework QuartzCore",
+					"-framework OpenGL",
+				);
+				SDKROOT = macosx;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../scripts;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		F93E247DE5BB17C00E3918D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../bx/include/compat/osx,
+					../../../../bx/include,
+					../../../../bimg/include,
+					../../../include,
+					../../../3rdparty,
+					../../../examples/common,
+				);
+				OBJROOT = obj/Release/geometryv;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_LDFLAGS = (
+					"-framework Cocoa",
+					"-framework Metal",
+					"-framework QuartzCore",
+					"-framework OpenGL",
+				);
+				SDKROOT = macosx;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../scripts;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1EC640A1DB3C126660E5089 /* Build configuration list for PBXNativeTarget "geometryvDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD360F7E191A1EBE221D4CFA /* Debug */,
+				270D1375937B68F4DC6423F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "geometryv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECC89A38A1E6193733D9EA3 /* Debug */,
+				F93E247DE5BB17C00E3918D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = __RootObject_ /* Project object */;
+}

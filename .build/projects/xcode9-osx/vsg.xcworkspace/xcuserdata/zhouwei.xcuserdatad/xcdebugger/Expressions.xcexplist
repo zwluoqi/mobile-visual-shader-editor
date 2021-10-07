@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ue::ShaderComplieThread(bx::Thread*, void*):UE.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "&amp;shaderUniformStreamData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csg::BKE_colorband_evaluate_table_rgba(csg::ColorRampSlotValue const*, csc::Float4**, int*):code_rampcolor_byte.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "(*array)[a]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csg::ConvertToUniformData(csc::ShaderDataType::Enum, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;, csc::UniformType::Enum, csc::ShaderAttributeType::Enum, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;, csc::Float4 const&amp;):code_generate.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "ue::CalculateFrameTime():UE.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "fpp_get:cpp6.c">
+      </ContextState>
+      <ContextState
+         contextName = "csc::MaterialShaderContext::getTextureHandle(char const*):shader_def.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "fileImage2SamplerUid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "userEngine::Scene::ResetShaderUniformData(void*, unsigned int):Scene.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "streamVec4UniformHandle">
+            </PersistentString>
+            <PersistentString
+               value = "curSteamVec4Counter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShowDemoWindowWidgets():imgui_demo.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "io.Fonts">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csg::ResolveSlot(std::__1::shared_ptr&lt;csg::CodeGenerateData&gt;, csg::Graph&amp;, csg::SlotId&amp;, bool*):code_generate.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "uniformData.uniformName">
+            </PersistentString>
+            <PersistentString
+               value = "uniformData.uniformId">
+            </PersistentString>
+            <PersistentString
+               value = "uniformData.uniformId ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "std::__1::__tree&lt;std::__1::__value_type&lt;unsigned long long, unsigned short&gt;, std::__1::__map_value_compare&lt;unsigned long long, std::__1::__value_type&lt;unsigned long long, unsigned short&gt;, std::__1::less&lt;unsigned long long&gt;, true&gt;, std::__1::allocator&lt;std::__1::__value_type&lt;unsigned long long, unsigned short&gt; &gt; &gt;::__root() const:__tree">
+         <PersistentStrings>
+            <PersistentString
+               value = "this.__end_node">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "entry::processEvents(unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, entry::MouseState*):entry.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "csc::MaterialShaderContext::addTextureHandle(char const*):shader_def.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "fileImage2SamplerUid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cse::MainWindow::process_event(cse::InputEvent const&amp;) const:main_window.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "hovered_subwindow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OcornutImguiContext::render(ImDrawData*):imgui.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "s_tex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cse::SharedState::setSlotLayer(unsigned long long, unsigned short):shared_state.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "materialShaderContext">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InputKeyboard::pushChar(unsigned char, unsigned char const*):input.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "bgfx::Context::flushTextureUpdateBatch(bgfx::CommandBuffer&amp;):bgfx.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mem.data[2]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cse::ParamEditorSubwindow::run_image(csg::SlotId, csg::ImageSlotValue) const:subwindow_param_editor.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "the_state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OcornutImguiContext::create(float, bx::AllocatorI*):imgui.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "io.Fonts">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ImDrawList::AddImage(void*, ImVec2 const&amp;, ImVec2 const&amp;, ImVec2 const&amp;, ImVec2 const&amp;, unsigned int):imgui_draw.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_CmdHeader">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csg::generate_graph_code(std::__1::shared_ptr&lt;csg::Graph&gt;, std::__1::shared_ptr&lt;cse::SharedState&gt;):code_generate.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "cse::SharedState::get_output_code(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;, void*, unsigned int&amp;):shared_state.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "&amp;outputData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ue::init():UE.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "ImGuiIO::AddInputCharactersUTF8(char const*):imgui.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "*utf8_chars">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ImDrawList::AddDrawCmd():imgui_draw.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "_CmdHeader">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csc::MaterialShaderContext::SetSlotLayer(unsigned long long, unsigned short):shader_def.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "this-&gt;m_curveRampUniformId">
+            </PersistentString>
+            <PersistentString
+               value = "slot2Layers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csg::SetVectorCurveSlotValue(std::__1::shared_ptr&lt;csg::CodeGenerateData&gt;, csg::ColorRampSlotValue const*, int*):code_rampcolor_byte.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "array[1]">
+            </PersistentString>
+            <PersistentString
+               value = "((char*)array)[3]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "entry::Context::dispatchEvent(NSEvent*):entry_osx.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_scrollf">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "vsg::compileShader(char const*, char const*, char const*):vsg_global.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "vsg_ctx-&gt;shaderOption-&gt;compileShaderStr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csc::MaterialShaderContext::UpdateLayerRampBuffer(csc::Float4*, int):shader_def.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "((char*)source)[2]">
+            </PersistentString>
+            <PersistentString
+               value = "((char*)dest)[2]">
+            </PersistentString>
+            <PersistentString
+               value = "source[1]">
+            </PersistentString>
+            <PersistentString
+               value = "dest[0]">
+            </PersistentString>
+            <PersistentString
+               value = "dest[1]">
+            </PersistentString>
+            <PersistentString
+               value = "sizeof(Float4)">
+            </PersistentString>
+            <PersistentString
+               value = "m_curveRampBuffer">
+            </PersistentString>
+            <PersistentString
+               value = "((float*)source)[5]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "userEngine::Scene::SetMaterialUniform():Scene.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "streamUniformHandle">
+            </PersistentString>
+            <PersistentString
+               value = "curSteamCounter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "userEngine::Scene::ReloadShaderProgram(char const*, char const*, void*, unsigned int):Scene.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "&amp;streamVec4UniformHandle">
+            </PersistentString>
+            <PersistentString
+               value = "sizeof(Vec4UniformHandle)">
+            </PersistentString>
+            <PersistentString
+               value = "(int)curSteamVec4Counter">
+            </PersistentString>
+            <PersistentString
+               value = "uniformHandleMap[this_point.uniformId]">
+            </PersistentString>
+            <PersistentString
+               value = "this_point.uniformId">
+            </PersistentString>
+            <PersistentString
+               value = "this_point.uniformName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "bgfx::MatrixCache::add(void const*, unsigned short):bgfx_p.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_cache">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ResolveNode(std::__1::shared_ptr&lt;csg::CodeGenerateData&gt;, csg::Graph&amp;, std::__1::shared_ptr&lt;csg::Node const&gt;, int):code_generate.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "node">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cse::MainWindow::do_event(cse::InterfaceEvent const&amp;):main_window.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "ImGui::toId(bgfx::TextureHandle, unsigned char, unsigned char):imgui.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "&amp;tex.id">
+            </PersistentString>
+            <PersistentString
+               value = "tex.id">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "csg::CodeGenerateData::GetUniformData(std::__1::shared_ptr&lt;cse::SharedState&gt;):code_generate.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "this-&gt;uniformFragParams">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OcornutImguiContext::beginFrame(int, int, unsigned char, int, int, int, int, unsigned short):imgui.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_last">
+            </PersistentString>
+            <PersistentString
+               value = "cutChar">
+            </PersistentString>
+            <PersistentString
+               value = "frameTime">
+            </PersistentString>
+            <PersistentString
+               value = "io.Fonts">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "fpp_control:cpp2.c">
+      </ContextState>
+      <ContextState
+         contextName = "csg::code_slot_value(std::__1::shared_ptr&lt;csg::CodeGenerateData&gt;, csg::SlotId&amp;, csg::SlotValue const&amp;, csc::Float4&amp;, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;&amp;):code_generate.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "codeGenerateData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

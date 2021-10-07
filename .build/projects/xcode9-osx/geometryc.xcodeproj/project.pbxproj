@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058A7E61F10672A41A8472B8 /* vertexlayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54137E0FC0CCE8B9492C0394 /* vertexlayout.cpp */; };
+		12E906767E071B43C7D42055 /* vfetchanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21675E1E0DD21E2AB6ED838F /* vfetchanalyzer.cpp */; };
+		1C55680608D3B89FF1CA7637 /* bounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFBFA1B7092343002C33D7 /* bounds.cpp */; };
+		223EC1BB8EF72B6617574640 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1913A63DDB704CAC6FD8995 /* Cocoa.framework */; };
+		440D7CAA30E302A8198D1DFB /* vertexcodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73CC90B0DF3ED3CC28D30851 /* vertexcodec.cpp */; };
+		4ED6E288BA694437C350B4ED /* vertexfilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D93995C09532A017270120C /* vertexfilter.cpp */; };
+		515849693D44E1D8A6BAA02B /* vfetchoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0D2CACB4C9B984F152CA161 /* vfetchoptimizer.cpp */; };
+		53C74D5D3FB3E5CCA829A51F /* vcacheoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2B203017F4EDB3E084F6C5 /* vcacheoptimizer.cpp */; };
+		5C0B8ACDC8D3575191646063 /* indexcodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB4B63289720ABDBC0CFEAD7 /* indexcodec.cpp */; };
+		5DAFA143C9CDB510129BBB22 /* vcacheanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C52B65778BD766321D9DBC8 /* vcacheanalyzer.cpp */; };
+		6C942DC0D85CFB43A1ED0356 /* stripifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBEA58D0A7BFA083D06EE07F /* stripifier.cpp */; };
+		8084F31B6C5A7A195504956C /* clusterizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88C12DBC7496756F9D45B56B /* clusterizer.cpp */; };
+		A71AA49E1339B86B5C06BE7D /* indexgenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96078C9882724CA42B8EB109 /* indexgenerator.cpp */; };
+		CDC13BF93988981582E32678 /* libbxDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4D31128D7D36AD1C0B057 /* libbxDebug.a */; };
+		DC1182A8487B170BD1BEC5B5 /* overdrawanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE55EC657BBE5C340650017 /* overdrawanalyzer.cpp */; };
+		DC1CB5D648DA5D0DD1A44975 /* allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B9991153743C7242014CF3F /* allocator.cpp */; };
+		DCF039B048B796CC9112252F /* geometryc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABCAD21397DDD26C40C7AF59 /* geometryc.cpp */; };
+		F2133745DEAA79FA875FF0FA /* overdrawoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA323F0E56C6A0BC5FAD1073 /* overdrawoptimizer.cpp */; };
+		F358858B5FECE63968D356F0 /* spatialorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A29AE1878E5A722CF7775A37 /* spatialorder.cpp */; };
+		FB8243BA674B113E30DC1950 /* simplifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAC37C3FD698C4F2FF4704EF /* simplifier.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A13FC0C48D140878B6C34774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6B93D439262A572BBF8C0F1 /* bx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5D335834140F17D0A3489DB;
+			remoteInfo = libbxDebug.a;
+		};
+		FB777A90E74CC24310FC0140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6B93D439262A572BBF8C0F1 /* bx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B1D4BC607ACD48FB0CAE88A;
+			remoteInfo = libbxDebug.a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E44FB3F7AB63D5CC34A73E0 /* meshoptimizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = meshoptimizer.h; sourceTree = "<group>"; };
+		0F9F28087BB98BA9C4DB9B3D /* bounds.inl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bounds.inl; sourceTree = "<group>"; };
+		12464A597ED50B4487D1EC5B /* bounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bounds.h; sourceTree = "<group>"; };
+		1D93995C09532A017270120C /* vertexfilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vertexfilter.cpp; sourceTree = "<group>"; };
+		21675E1E0DD21E2AB6ED838F /* vfetchanalyzer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vfetchanalyzer.cpp; sourceTree = "<group>"; };
+		4B9991153743C7242014CF3F /* allocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = allocator.cpp; sourceTree = "<group>"; };
+		4BEFBFA1B7092343002C33D7 /* bounds.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bounds.cpp; sourceTree = "<group>"; };
+		54137E0FC0CCE8B9492C0394 /* vertexlayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vertexlayout.cpp; sourceTree = "<group>"; };
+		6BE55EC657BBE5C340650017 /* overdrawanalyzer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = overdrawanalyzer.cpp; sourceTree = "<group>"; };
+		73CC90B0DF3ED3CC28D30851 /* vertexcodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vertexcodec.cpp; sourceTree = "<group>"; };
+		841F5F6AF056A701F9600B25 /* geometrycDebug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = geometrycDebug; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C12DBC7496756F9D45B56B /* clusterizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = clusterizer.cpp; sourceTree = "<group>"; };
+		8C52B65778BD766321D9DBC8 /* vcacheanalyzer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vcacheanalyzer.cpp; sourceTree = "<group>"; };
+		96078C9882724CA42B8EB109 /* indexgenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = indexgenerator.cpp; sourceTree = "<group>"; };
+		A29AE1878E5A722CF7775A37 /* spatialorder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spatialorder.cpp; sourceTree = "<group>"; };
+		A6B93D439262A572BBF8C0F1 /* bx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = bx.xcodeproj; sourceTree = SOURCE_ROOT; };
+		AB2B203017F4EDB3E084F6C5 /* vcacheoptimizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vcacheoptimizer.cpp; sourceTree = "<group>"; };
+		AB4B63289720ABDBC0CFEAD7 /* indexcodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = indexcodec.cpp; sourceTree = "<group>"; };
+		ABCAD21397DDD26C40C7AF59 /* geometryc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = geometryc.cpp; sourceTree = "<group>"; };
+		BBEA58D0A7BFA083D06EE07F /* stripifier.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stripifier.cpp; sourceTree = "<group>"; };
+		D21E89BD3E8DDE3C8776993C /* vertexlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vertexlayout.h; sourceTree = "<group>"; };
+		E0D2CACB4C9B984F152CA161 /* vfetchoptimizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vfetchoptimizer.cpp; sourceTree = "<group>"; };
+		EA323F0E56C6A0BC5FAD1073 /* overdrawoptimizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = overdrawoptimizer.cpp; sourceTree = "<group>"; };
+		EAC37C3FD698C4F2FF4704EF /* simplifier.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simplifier.cpp; sourceTree = "<group>"; };
+		F1913A63DDB704CAC6FD8995 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D981B96F95E78B242BA0615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223EC1BB8EF72B6617574640 /* Cocoa.framework in Frameworks */,
+				CDC13BF93988981582E32678 /* libbxDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F50FE477B8746DF8491AA02 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				1FBC91930BE25BFAF427E1C5 /* common */,
+			);
+			name = examples;
+			path = ../../../examples;
+			sourceTree = "<group>";
+		};
+		102DC5627CEFF8ECC59F8779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1913A63DDB704CAC6FD8995 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		115B1F4BFD41E142A6924760 /* meshoptimizer */ = {
+			isa = PBXGroup;
+			children = (
+				29E629CD15631D103EE01D24 /* src */,
+			);
+			path = meshoptimizer;
+			sourceTree = "<group>";
+		};
+		1FBC91930BE25BFAF427E1C5 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				4BEFBFA1B7092343002C33D7 /* bounds.cpp */,
+				12464A597ED50B4487D1EC5B /* bounds.h */,
+				0F9F28087BB98BA9C4DB9B3D /* bounds.inl */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		26BAD88D92F120259BFB8448 /* geometryc */ = {
+			isa = PBXGroup;
+			children = (
+				7125C2335D1FEB85468C8196 /* 3rdparty */,
+				0F50FE477B8746DF8491AA02 /* examples */,
+				D72611E6C30AD23B2C6BCC8E /* src */,
+				9C49B96E88D8423831F75633 /* tools */,
+				102DC5627CEFF8ECC59F8779 /* Frameworks */,
+				86D002F0F2074B87FB11AFAA /* Products */,
+				54FDB093C034F92AC93E5D4E /* Projects */,
+			);
+			name = geometryc;
+			path = .;
+			sourceTree = "<group>";
+		};
+		29E629CD15631D103EE01D24 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4B9991153743C7242014CF3F /* allocator.cpp */,
+				88C12DBC7496756F9D45B56B /* clusterizer.cpp */,
+				AB4B63289720ABDBC0CFEAD7 /* indexcodec.cpp */,
+				96078C9882724CA42B8EB109 /* indexgenerator.cpp */,
+				0E44FB3F7AB63D5CC34A73E0 /* meshoptimizer.h */,
+				6BE55EC657BBE5C340650017 /* overdrawanalyzer.cpp */,
+				EA323F0E56C6A0BC5FAD1073 /* overdrawoptimizer.cpp */,
+				EAC37C3FD698C4F2FF4704EF /* simplifier.cpp */,
+				A29AE1878E5A722CF7775A37 /* spatialorder.cpp */,
+				BBEA58D0A7BFA083D06EE07F /* stripifier.cpp */,
+				8C52B65778BD766321D9DBC8 /* vcacheanalyzer.cpp */,
+				AB2B203017F4EDB3E084F6C5 /* vcacheoptimizer.cpp */,
+				73CC90B0DF3ED3CC28D30851 /* vertexcodec.cpp */,
+				1D93995C09532A017270120C /* vertexfilter.cpp */,
+				21675E1E0DD21E2AB6ED838F /* vfetchanalyzer.cpp */,
+				E0D2CACB4C9B984F152CA161 /* vfetchoptimizer.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		54FDB093C034F92AC93E5D4E /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				A6B93D439262A572BBF8C0F1 /* bx.xcodeproj */,
+			);
+			name = Projects;
+			path = .;
+			sourceTree = "<group>";
+		};
+		7125C2335D1FEB85468C8196 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				115B1F4BFD41E142A6924760 /* meshoptimizer */,
+			);
+			name = 3rdparty;
+			path = ../../../../bgfx/3rdparty;
+			sourceTree = "<group>";
+		};
+		86D002F0F2074B87FB11AFAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841F5F6AF056A701F9600B25 /* geometrycDebug */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C49B96E88D8423831F75633 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				DB067ACAC72C4431B072C9FC /* geometryc */,
+			);
+			name = tools;
+			path = ../../../tools;
+			sourceTree = "<group>";
+		};
+		A0F161880CD94C7E15C74EFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CC4D31128D7D36AD1C0B057 /* libbxDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D72611E6C30AD23B2C6BCC8E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				54137E0FC0CCE8B9492C0394 /* vertexlayout.cpp */,
+				D21E89BD3E8DDE3C8776993C /* vertexlayout.h */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+		DB067ACAC72C4431B072C9FC /* geometryc */ = {
+			isa = PBXGroup;
+			children = (
+				ABCAD21397DDD26C40C7AF59 /* geometryc.cpp */,
+			);
+			path = geometryc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA2E92E4D628BB36BF955147 /* geometryc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 894305B3F50962CF3E65F031 /* Build configuration list for PBXNativeTarget "geometryc" */;
+			buildPhases = (
+				EBEF0C5457B66970A011F8D2 /* Resources */,
+				636214F5CF2871111884FF73 /* Sources */,
+				8D981B96F95E78B242BA0615 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C44C6C7F82BB1BD011AB339 /* PBXTargetDependency */,
+			);
+			name = geometryc;
+			productInstallPath = "$(HOME)/bin";
+			productName = geometryc;
+			productReference = 841F5F6AF056A701F9600B25 /* geometrycDebug */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "geometryc" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26BAD88D92F120259BFB8448 /* geometryc */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0F161880CD94C7E15C74EFA /* Products */;
+					ProjectRef = A6B93D439262A572BBF8C0F1 /* bx.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EA2E92E4D628BB36BF955147 /* geometryc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3CC4D31128D7D36AD1C0B057 /* libbxDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbxDebug.a;
+			remoteRef = A13FC0C48D140878B6C34774 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBEF0C5457B66970A011F8D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		636214F5CF2871111884FF73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1CB5D648DA5D0DD1A44975 /* allocator.cpp in Sources */,
+				8084F31B6C5A7A195504956C /* clusterizer.cpp in Sources */,
+				5C0B8ACDC8D3575191646063 /* indexcodec.cpp in Sources */,
+				A71AA49E1339B86B5C06BE7D /* indexgenerator.cpp in Sources */,
+				DC1182A8487B170BD1BEC5B5 /* overdrawanalyzer.cpp in Sources */,
+				F2133745DEAA79FA875FF0FA /* overdrawoptimizer.cpp in Sources */,
+				FB8243BA674B113E30DC1950 /* simplifier.cpp in Sources */,
+				F358858B5FECE63968D356F0 /* spatialorder.cpp in Sources */,
+				6C942DC0D85CFB43A1ED0356 /* stripifier.cpp in Sources */,
+				5DAFA143C9CDB510129BBB22 /* vcacheanalyzer.cpp in Sources */,
+				53C74D5D3FB3E5CCA829A51F /* vcacheoptimizer.cpp in Sources */,
+				440D7CAA30E302A8198D1DFB /* vertexcodec.cpp in Sources */,
+				4ED6E288BA694437C350B4ED /* vertexfilter.cpp in Sources */,
+				12E906767E071B43C7D42055 /* vfetchanalyzer.cpp in Sources */,
+				515849693D44E1D8A6BAA02B /* vfetchoptimizer.cpp in Sources */,
+				1C55680608D3B89FF1CA7637 /* bounds.cpp in Sources */,
+				058A7E61F10672A41A8472B8 /* vertexlayout.cpp in Sources */,
+				DCF039B048B796CC9112252F /* geometryc.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C44C6C7F82BB1BD011AB339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libbxDebug.a;
+			targetProxy = FB777A90E74CC24310FC0140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73D2E5D65F4FD91988CCD92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../bx/include/compat/osx,
+					../../../../bx/include,
+					../../../include,
+					../../../3rdparty,
+					../../../examples/common,
+				);
+				OBJROOT = obj/Release/geometryc;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				SDKROOT = macosx;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../scripts;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		743ABF19E0A814992992CF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../scripts;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = geometrycRelease;
+			};
+			name = Release;
+		};
+		9839FC56848BD3466DAA1057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_LIMIT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_CONSTANT_MACROS,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../bx/include/compat/osx,
+					../../../../bx/include,
+					../../../include,
+					../../../3rdparty,
+					../../../examples/common,
+				);
+				OBJROOT = obj/Debug/geometryc;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fomit-frame-pointer",
+					"-ffast-math",
+					"-Wshadow",
+					"-Wfatal-errors",
+					"-Wunused-value",
+					"-Wundef",
+				);
+				SDKROOT = macosx;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = ../../../scripts;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		BAAC45FB2690543B2F938277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../scripts;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = geometrycDebug;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "geometryc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9839FC56848BD3466DAA1057 /* Debug */,
+				73D2E5D65F4FD91988CCD92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		894305B3F50962CF3E65F031 /* Build configuration list for PBXNativeTarget "geometryc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAC45FB2690543B2F938277 /* Debug */,
+				743ABF19E0A814992992CF98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}

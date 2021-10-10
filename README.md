@@ -37,16 +37,18 @@ OSX：homebrew install boost
 WIN：vcpkg install boost
 
 ### 4.关联assimp
-1.直接使用上面下载工程生成Assimp的动态库</br>
+1.直接使用上面下载工程生成Assimp的动态库，然后放入工程</br>
 2.或者将下载的工程关联到mobile-visual-shader-editor工程中依赖即可</br>
 *注意生成Mac APP的时候有动态库关联错误dyld: Library not loaded: @rpath/libassimp5.dylib，这是Mac自身的问题，重定向库的路径即可
 ```
 # Type a script or drag a script file from your workspace to insert its path.
 install_name_tool -id @executable_path/../Frameworks/libassimpd.5.0.0.dylib libassimpd.5.0.0.dylib
 ```
+3.或者直接更改工程设置，生成静态库，而不是默认的动态库</br>
 
 
-
+[License (BSD 2-clause)](https://zwluoqi.github.io/mobile-visual-shader-editor/license.html)
+-----------------------------------------------------------------------
 <a href="http://opensource.org/licenses/BSD-2-Clause" target="_blank">
 <img align="right" src="http://opensource.org/trademarks/opensource/OSI-Approved-License-100x137.png">
 </a>

@@ -687,6 +687,9 @@ namespace csg {
                 else if (outParam.size() == 3) {
                     snprintf(buff, sizeof(buff), new_fun_name_ptr, inputVals[0], inputVals[1], inputVals[2], inputVals[3], inputVals[4], inputVals[5], inputVals[6], inputVals[7], outParam[0], outParam[1], outParam[2]);
                 }
+                else if (outParam.size() == 4) {
+                    snprintf(buff, sizeof(buff), new_fun_name_ptr, inputVals[0], inputVals[1], inputVals[2], inputVals[3], inputVals[4], inputVals[5], inputVals[6], outParam[0], outParam[1], outParam[2],outParam[3]);
+                }
                 else {
                     assert(false);
                 }
@@ -1177,7 +1180,7 @@ namespace csg {
                     std::vector<std::string> outParam;
                     std::vector<std::string> extInput;
                     extInput.push_back("GPU_WORLD_POSITION");
-                    ProcessNode(codeGenerateData,  node, "node_bsdf_pbr(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", outParam,0,&extInput);
+                    ProcessNode(codeGenerateData,  node, "node_bsdf_pbr(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", outParam,0,&extInput);
                     return outParam[getOutIndex];
                 }
                 break;

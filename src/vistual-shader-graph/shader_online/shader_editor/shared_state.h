@@ -35,7 +35,7 @@ namespace cse {
 		bool should_stop() { return stop.load(); }
         
         
-        void setStatePath(const bx::FilePath& bxFilePath,bool absPath){
+        void setStatePath(const bx::FilePath& bxFilePath,bool _documentPath){
 
             auto fileNam = bxFilePath.getBaseName();
             auto baseNamePath = bx::FilePath(fileNam);
@@ -45,13 +45,13 @@ namespace cse {
             auto dirPath = bx::FilePath(dirNam);
             curGraphDir = dirPath.getCPtr();
             
-            abslotePath = absPath;
+            documentPath = _documentPath;
         }
         
         void new_input_graph(){
             curGraphName = "default";
             curGraphDir = "src_sources";
-            abslotePath = false;
+            documentPath = true;
             
         }
         
@@ -65,7 +65,7 @@ namespace cse {
         std::string getFragFilePathWithPrefix();
         std::string getVaringFilePathWithPrefix();
         std::string getNodeDataFilePathWithPrefix();
-        bool getAbs(){return abslotePath;}
+        bool isDocumentPath(){return documentPath;}
         
         uint32_t getStreamDataSize();
         
@@ -111,9 +111,9 @@ namespace cse {
 
 		std::atomic<bool> stop{ false };
         
-        std::string curGraphName{"default"};
-        std::string curGraphDir{"src_sources"};
-        bool abslotePath{false};
+        std::string curGraphName{"pbr"};
+        std::string curGraphDir{"shader_graph"};
+        bool documentPath{false};
         bool waitInputFile{false};
         
         csc::UniformChangeData uniformChangeData[64];

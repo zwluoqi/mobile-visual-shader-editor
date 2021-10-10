@@ -70,8 +70,8 @@ namespace vsg{
     //加载shader
     bgfx::ProgramHandle load_shader_program(const char* vsFileName,const char* fsFileName);
 
-    bool write_file(const char* _filePath, void* data, uint32_t _size,bool absPath);
-    void* load_file(const char* _filePath, uint32_t* _size,bool absPath);
+    bool write_file(const char* _filePath, void* data, uint32_t _size,bool isDocument);
+    void* load_file(const char* _filePath, uint32_t* _size,bool isDocument);
     std::string get_document_file(const char * filePath);
     std::string get_document_shader_file(const char * filePath);
     std::string get_app_file(const char * filePath);

@@ -26,8 +26,9 @@ $input  GPU_WORLD_POSITION, VERTEX_CD_MTFACE, VERTEX_CD_ORCO, GPU_WORLD_NORMAL V
 uniform float image_tex2_projection_type_3;
 SAMPLER2D(image_tex2_image_5,0);
 uniform vec4 pbr1_specular_5;
-uniform vec4 pbr1_emission_6;
-uniform float pbr1_smoothness_7;
+uniform float pbr1_occlusion_6;
+uniform vec4 pbr1_emission_7;
+uniform float pbr1_smoothness_8;
 
 
 
@@ -55,7 +56,7 @@ vec3 lightRadiance = uLightRadiance.xyz;
  vec4 image_tex2_color_0;
  float image_tex2_fac_1;
  node_tex_image_linear_simple(image_tex2_projection_type_3,VERTEX_CD_MTFACE,image_tex2_image_5,image_tex2_color_0,image_tex2_fac_1);
- node_bsdf_pbr(image_tex2_color_0,pbr1_specular_5,pbr1_emission_6,pbr1_smoothness_7,GPU_WORLD_NORMAL,GPU_WORLD_POSITION,pbr1_BSDF_0,pbr1_diffuse_1,pbr1_specular_2,pbr1_surface_reduction_3);
+ node_bsdf_pbr(image_tex2_color_0,pbr1_specular_5,pbr1_occlusion_6,pbr1_emission_7,pbr1_smoothness_8,GPU_WORLD_NORMAL,GPU_WORLD_POSITION,pbr1_BSDF_0,pbr1_diffuse_1,pbr1_specular_2,pbr1_surface_reduction_3);
  gl_FragColor = pbr1_BSDF_0.radiance;
 
 }

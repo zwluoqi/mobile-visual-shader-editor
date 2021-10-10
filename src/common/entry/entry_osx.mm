@@ -313,24 +313,24 @@ namespace entry
                             nfdfilteritem_t filterItem[1] = { { "NodeShader", "nodedata" }};
                             openDialogResult = NFD_OpenDialog(&outPath, filterItem, 1, NULL);
                         }else{
-                            nfdfilteritem_t filterItem[3] = { { "Texture", "ktx,dds,png,exr,hdr,jpg,jpeg" }, { "NodeShader", "node" },{"Model","fbx,obj"} };
+                            nfdfilteritem_t filterItem[3] = { { "Texture", "ktx,dds,png,exr,hdr,jpg,jpeg,tif,tga" }, { "NodeShader", "node" },{"Model","fbx,obj"} };
                             openDialogResult = NFD_OpenDialog(&outPath, filterItem, 3, NULL);
                         }
                         
                         if ( openDialogResult == NFD_OKAY )
                         {
                             m_eventQueue.postDropFileEvent(dialog->m_handle, outPath,0);
-                            printf("Success!");
+                            printf("Success Load File!");
                             NFD_FreePath(outPath);
                         }
                         else if ( openDialogResult == NFD_CANCEL )
                         {
-                            printf("User pressed cancel.");
+                            printf("User pressed cancel Load File.");
                             m_eventQueue.postDropFileEvent(dialog->m_handle, NULL,1);
                         }
                         else
                         {
-                            printf("Error: %s\n", NFD_GetError() );
+                            printf("Error Load File: %s\n", NFD_GetError() );
                             m_eventQueue.postDropFileEvent(dialog->m_handle, NULL,2);
                         }
                     }

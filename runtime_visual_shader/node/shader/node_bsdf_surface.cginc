@@ -10,7 +10,7 @@
 #include "../light/eval_surface_lib.cginc"
 
 
-void node_bsdf_pbr(vec4 albedo,vec4 specular, vec4 emission,float smoothness, vec3 GPU_WORLD_NORMAL,vec3 GPU_WORLD_POSITION,out Closure result
+void node_bsdf_pbr(vec4 albedo,vec4 specular,float occlusion, vec4 emission,float smoothness, vec3 GPU_WORLD_NORMAL,vec3 GPU_WORLD_POSITION,out Closure result
                     ,out vec4 diffuseResult,out vec4 speResult,out vec4 surfaceReductionResult){
     BSDFSurfaceOutput surface;
     surface.Albedo = albedo.xyz;

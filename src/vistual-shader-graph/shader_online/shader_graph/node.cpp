@@ -335,6 +335,7 @@ csg::Node::Node(const NodeType type, const csc::Int2 position) : position{ posit
         _slots.push_back(Slot{ "SurfaceReduction",         "surface_reduction",         SlotDirection::OUTPUT, SlotType::COLOR });
         _slots.push_back(Slot{ "Albedo",      "albedo",       ColorSlotValue{ csc::Float3{ 0.9f, 0.9f, 0.9f} } });
         _slots.push_back(Slot{ "Specular",      "specular",       ColorSlotValue{ csc::Float3{ 0.0f, 0.0f, 0.0f} } });
+        _slots.push_back(Slot{ "AlbedoOcclusion",      "occlusion",       FloatSlotValue{ 0.0f, 0.0f, 1.0f } } );
         _slots.push_back(Slot{ "Emission",      "emission",       ColorSlotValue{ csc::Float3{ 0.0f, 0.0f, 0.0f} } });
         _slots.push_back(Slot{ "Smoothness",    "smoothness",    FloatSlotValue{ 0.0f, 0.0f, 1.0f } });
         _slots.push_back(Slot{ "Normal",       "normal",       SlotDirection::INPUT, SlotType::VECTOR ,"GPU_WORLD_NORMAL"});

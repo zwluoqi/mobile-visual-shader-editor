@@ -34,19 +34,19 @@ namespace userengine {
                 std::string vertex;
                 std::string vardefine; shared_state->get_output_code(graphContent,vertex,fragment,vardefine,shaderUniformStreamData,shaderUniformStreamSize);
                 
-                bool abs = shared_state->getAbs();
+                bool isDocument = shared_state->isDocumentPath();
 
                 if(graphContent.size()>0){
                     auto filePath = shared_state->getNodeDataFilePathWithPrefix();
-                    vsg::write_file(filePath.c_str(), (void*)graphContent.c_str(), (uint32_t)graphContent.length(),abs);
+                    vsg::write_file(filePath.c_str(), (void*)graphContent.c_str(), (uint32_t)graphContent.length(),isDocument);
                 }
                 
                 auto vertexfilePath = shared_state->getVertexFilePathWithPrefix();
-                vsg::write_file(vertexfilePath.c_str(), (void*)vertex.c_str(), (uint32_t)vertex.length(),abs);
+                vsg::write_file(vertexfilePath.c_str(), (void*)vertex.c_str(), (uint32_t)vertex.length(),isDocument);
                 auto fragfilePath = shared_state->getFragFilePathWithPrefix();
-                vsg::write_file(fragfilePath.c_str(), (void*)fragment.c_str(), (uint32_t)fragment.length(),abs);
+                vsg::write_file(fragfilePath.c_str(), (void*)fragment.c_str(), (uint32_t)fragment.length(),isDocument);
                 auto varfilePath = shared_state->getVaringFilePathWithPrefix();
-                vsg::write_file(varfilePath.c_str(), (void*)vardefine.c_str(), (uint32_t)vardefine.length(),abs);
+                vsg::write_file(varfilePath.c_str(), (void*)vardefine.c_str(), (uint32_t)vardefine.length(),isDocument);
 
                 bool success1 = vsg::compile_shader(vertexfilePath.c_str() ,shared_state->getVertexName().c_str(),"vertex");
                 bool success2 = vsg::compile_shader(fragfilePath.c_str(),shared_state->getFragName().c_str(),"fragment");
@@ -195,7 +195,7 @@ namespace userengine {
         const float _deltaTime = userengine::ue_ctx->deltaTime;
         float view[16];
         bx::Vec3 at  = { 0.0f, 1.0f,  0.0f };
-        at.x += userengine::ue_ctx->accRightMouseMove.x;
+        at.x -= userengine::ue_ctx->accRightMouseMove.x;
         at.y += userengine::ue_ctx->accRightMouseMove.y;
         
         bx::Vec3 eye = { 0.0f, 1.0f, -2.5f };
@@ -203,7 +203,7 @@ namespace userengine {
         eye.z = std::min(-0.1f, eye.z);
         
         
-        eye.x += userengine::ue_ctx->accRightMouseMove.x;
+        eye.x -= userengine::ue_ctx->accRightMouseMove.x;
         eye.y += userengine::ue_ctx->accRightMouseMove.y;
         
         bx::Vec3 tmp = bx::mul(eye, roation_matrix);
@@ -218,9 +218,9 @@ namespace userengine {
 
         if (ue_ctx->shared_state->input_reload()) {
             uint32_t size = 0;
-            auto abs =ue_ctx->shared_state->getAbs();
+            auto isDocument =ue_ctx->shared_state->isDocumentPath();
             auto filePath = ue_ctx->shared_state->getNodeDataFilePathWithPrefix();
-            char* data = (char*)vsg::load_file(filePath.c_str(), &size,abs);
+            char* data = (char*)vsg::load_file(filePath.c_str(), &size,isDocument);
             ue_ctx->main_window->load_graph(data);
         }
         

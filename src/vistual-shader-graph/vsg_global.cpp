@@ -266,9 +266,9 @@ namespace vsg {
     }
 
     //写入文件
-    bool write_file(const char* _filePath, void* data, uint32_t _size,bool abs)
+    bool write_file(const char* _filePath, void* data, uint32_t _size,bool document)
     {
-        if(abs){
+        if(!document){
             return _writeFile(_filePath,data,_size);
         }else{
             auto str = get_document_file(_filePath);
@@ -278,9 +278,9 @@ namespace vsg {
     }
 
     //读文件
-    void* load_file(const char* _filePath,  uint32_t* _size,bool abs)
+    void* load_file(const char* _filePath,  uint32_t* _size,bool document)
     {
-        if(abs){
+        if(!document){
             return _loadFile(_filePath,_size);
         }else{
             auto str = get_document_file(_filePath);

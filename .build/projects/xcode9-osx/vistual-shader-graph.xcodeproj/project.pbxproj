@@ -12,6 +12,7 @@
 		71C047D2DDFBA795E6F02425 /* libbgfxDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E044154CCCACDB193518F02F /* libbgfxDebug.a */; };
 		8B12A39E77BCD8AD608DE0C8 /* libbimgDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAADB3BF267410DC6FCF9E3E /* libbimgDebug.a */; };
 		A0630673270BE6EF00462AB1 /* slot_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0630672270BE6EE00462AB1 /* slot_type.cpp */; };
+		A07A64E12712C63500E85708 /* shader_graph in Resources */ = {isa = PBXBuildFile; fileRef = A07A64DB2712C63400E85708 /* shader_graph */; };
 		A07CD35326FDFB2B0033EB41 /* code_rampcolor_byte.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07CD34D26FDFB2A0033EB41 /* code_rampcolor_byte.cpp */; };
 		A09918E62712B54B004E17FD /* libassimpd.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A09918E52712B54B004E17FD /* libassimpd.5.0.0.dylib */; };
 		A09918E72712B54B004E17FD /* libassimpd.5.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A09918E52712B54B004E17FD /* libassimpd.5.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -207,6 +208,7 @@
 		5E32FF2F4A71A9ABF3F385DD /* bgfx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = bgfx.xcodeproj; sourceTree = SOURCE_ROOT; };
 		82720B72EE901F3F375E2551 /* bimg_decode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = bimg_decode.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A0630672270BE6EE00462AB1 /* slot_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slot_type.cpp; sourceTree = "<group>"; };
+		A07A64DB2712C63400E85708 /* shader_graph */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shader_graph; path = ../../../runtime_visual_shader/shader_graph; sourceTree = "<group>"; };
 		A07CD34D26FDFB2A0033EB41 /* code_rampcolor_byte.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = code_rampcolor_byte.cpp; sourceTree = "<group>"; };
 		A09918E52712B54B004E17FD /* libassimpd.5.0.0.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libassimpd.5.0.0.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0ACE2B426F97522008CFCD0 /* Sky.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sky.h; sourceTree = "<group>"; };
@@ -624,6 +626,7 @@
 		A0D8E0DF26D723780047DF48 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				A07A64DB2712C63400E85708 /* shader_graph */,
 				A0D8E1DA26DB4FD90047DF48 /* node */,
 				A0D8E11426D725070047DF48 /* common */,
 				A0D8E11626D725070047DF48 /* font */,
@@ -863,6 +866,7 @@
 				A0D8E11F26D725070047DF48 /* font in Resources */,
 				A0D8E11D26D725070047DF48 /* common in Resources */,
 				A0D8E11A26D725070047DF48 /* source_shader in Resources */,
+				A07A64E12712C63500E85708 /* shader_graph in Resources */,
 				A0D8E11C26D725070047DF48 /* text in Resources */,
 				A0D8E11826D725070047DF48 /* src_shader in Resources */,
 				A0D8E11E26D725070047DF48 /* textures in Resources */,

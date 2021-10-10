@@ -240,7 +240,9 @@ bgfx::TextureHandle loadTexture(bx::FileReaderI* _reader, const char* _filePath,
 					, bgfx::TextureFormat::Enum(imageContainer->m_format)
 					);
 			}
-		}
+        }else{
+            unload(data);
+        }
 	}
 
 	return handle;

@@ -408,7 +408,7 @@ cse::InterfaceEventArray cse::GraphSubwindow::process_event(const InputEvent& ev
         if(details.result == 0){
             if(the_state->getWaitInputFile()){
                 the_state->releaseWaitInputFile();
-                the_state->setStatePath(details.filePath,true);
+                the_state->setStatePath(details.filePath,false);
                 the_state->set_input_reload();
             }else{
                 if(selected_slot.has_value()){
@@ -425,7 +425,7 @@ cse::InterfaceEventArray cse::GraphSubwindow::process_event(const InputEvent& ev
     else if (event.type() == InputEventType::SAVE_FILE) {
         const auto details{ event.details_savefile().get() };
         if(details.result == 0){
-            the_state->setStatePath(details.filePath,true);
+            the_state->setStatePath(details.filePath,false);
             new_events.push(InterfaceEventType::SAVE_TO_MAX);
         }
     }

@@ -5,6 +5,9 @@
       location = "container:"
       name = "libs">
       <FileRef
+         location = "group:../../../../assimp/build/Assimp.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:bgfx.xcodeproj">
       </FileRef>
       <FileRef

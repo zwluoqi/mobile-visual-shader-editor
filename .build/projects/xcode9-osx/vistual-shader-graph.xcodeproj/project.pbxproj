@@ -13,12 +13,13 @@
 		8B12A39E77BCD8AD608DE0C8 /* libbimgDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAADB3BF267410DC6FCF9E3E /* libbimgDebug.a */; };
 		A0630673270BE6EF00462AB1 /* slot_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0630672270BE6EE00462AB1 /* slot_type.cpp */; };
 		A07CD35326FDFB2B0033EB41 /* code_rampcolor_byte.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07CD34D26FDFB2A0033EB41 /* code_rampcolor_byte.cpp */; };
+		A09918E62712B54B004E17FD /* libassimpd.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A09918E52712B54B004E17FD /* libassimpd.5.0.0.dylib */; };
+		A09918E72712B54B004E17FD /* libassimpd.5.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A09918E52712B54B004E17FD /* libassimpd.5.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A0D8DF9826D71FD10047DF48 /* libfcppDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8DF7926D71F6C0047DF48 /* libfcppDebug.a */; };
 		A0D8DF9926D71FE20047DF48 /* libglsl-optimizerDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8DF8426D71F820047DF48 /* libglsl-optimizerDebug.a */; };
 		A0D8DF9A26D71FEC0047DF48 /* libglslangDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8DF8A26D71F890047DF48 /* libglslangDebug.a */; };
 		A0D8DF9B26D71FF40047DF48 /* libspirv-crossDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8DF9026D71F940047DF48 /* libspirv-crossDebug.a */; };
 		A0D8DF9C26D71FF90047DF48 /* libspirv-optDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8DF9626D71F990047DF48 /* libspirv-optDebug.a */; };
-		A0D8DF9E26D7202A0047DF48 /* libassimp.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D8DF9D26D7202A0047DF48 /* libassimp.5.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		A0D8E11726D725070047DF48 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = A0D8E10E26D725060047DF48 /* shaders */; };
 		A0D8E11826D725070047DF48 /* src_shader in Resources */ = {isa = PBXBuildFile; fileRef = A0D8E10F26D725070047DF48 /* src_shader */; };
 		A0D8E11926D725070047DF48 /* meshes in Resources */ = {isa = PBXBuildFile; fileRef = A0D8E11026D725070047DF48 /* meshes */; };
@@ -68,7 +69,6 @@
 		A0D8E18126D725350047DF48 /* vsg_global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0D8DF6326D71E710047DF48 /* vsg_global.cpp */; };
 		A0D8E18226D725350047DF48 /* vsg_entry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0D8DF0526D71E710047DF48 /* vsg_entry.cpp */; };
 		A0D8E18326D914220047DF48 /* main_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0D8DF3C26D71E710047DF48 /* main_window.cpp */; };
-		A0D8E18626D924300047DF48 /* libassimp.5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A0D8DF9D26D7202A0047DF48 /* libassimp.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A0D8E1DB26DB4FD90047DF48 /* node in Resources */ = {isa = PBXBuildFile; fileRef = A0D8E1DA26DB4FD90047DF48 /* node */; };
 		A0F3E6FC270D43FB00DFE669 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F3E6FB270D43FB00DFE669 /* Scene.cpp */; };
 		A0F3E6FF270D46C000DFE669 /* MeshUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F3E6FE270D46BF00DFE669 /* MeshUtil.cpp */; };
@@ -186,13 +186,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A0D8E18726D924300047DF48 /* Embed Libraries */ = {
+		A09918E12712B501004E17FD /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A0D8E18626D924300047DF48 /* libassimp.5.dylib in Embed Libraries */,
+				A09918E72712B54B004E17FD /* libassimpd.5.0.0.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +208,7 @@
 		82720B72EE901F3F375E2551 /* bimg_decode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = bimg_decode.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A0630672270BE6EE00462AB1 /* slot_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slot_type.cpp; sourceTree = "<group>"; };
 		A07CD34D26FDFB2A0033EB41 /* code_rampcolor_byte.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = code_rampcolor_byte.cpp; sourceTree = "<group>"; };
+		A09918E52712B54B004E17FD /* libassimpd.5.0.0.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libassimpd.5.0.0.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0ACE2B426F97522008CFCD0 /* Sky.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sky.h; sourceTree = "<group>"; };
 		A0C8731626E3111200E5A930 /* code_rampcolor_byte.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = code_rampcolor_byte.h; sourceTree = "<group>"; };
 		A0C8731C26E35A1B00E5A930 /* shader_def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_def.h; sourceTree = "<group>"; };
@@ -307,7 +308,6 @@
 		A0D8DF8526D71F890047DF48 /* glslang.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = glslang.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A0D8DF8B26D71F940047DF48 /* spirv-cross.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "spirv-cross.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A0D8DF9126D71F990047DF48 /* spirv-opt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "spirv-opt.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		A0D8DF9D26D7202A0047DF48 /* libassimp.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.dylib; path = "../../../src/vistual-shader-graph/libs/libassimp.5.dylib"; sourceTree = "<group>"; };
 		A0D8E10E26D725060047DF48 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = ../../../runtime_visual_shader/shaders; sourceTree = "<group>"; };
 		A0D8E10F26D725070047DF48 /* src_shader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src_shader; path = ../../../runtime_visual_shader/src_shader; sourceTree = "<group>"; };
 		A0D8E11026D725070047DF48 /* meshes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = meshes; path = ../../../runtime_visual_shader/meshes; sourceTree = "<group>"; };
@@ -336,12 +336,12 @@
 			files = (
 				71C047D2DDFBA795E6F02425 /* libbgfxDebug.a in Frameworks */,
 				6966A1D9D5CF363C5E13E5E6 /* libexample-commonDebug.a in Frameworks */,
-				A0D8DF9E26D7202A0047DF48 /* libassimp.5.dylib in Frameworks */,
 				EE245A99DABB9C4E8370134F /* libbimg_decodeDebug.a in Frameworks */,
 				8B12A39E77BCD8AD608DE0C8 /* libbimgDebug.a in Frameworks */,
 				70D2E08ADC983DA725F4CB09 /* libbxDebug.a in Frameworks */,
 				A0D8DF9826D71FD10047DF48 /* libfcppDebug.a in Frameworks */,
 				A0D8DF9926D71FE20047DF48 /* libglsl-optimizerDebug.a in Frameworks */,
+				A09918E62712B54B004E17FD /* libassimpd.5.0.0.dylib in Frameworks */,
 				A0D8DF9A26D71FEC0047DF48 /* libglslangDebug.a in Frameworks */,
 				A0D8DF9B26D71FF40047DF48 /* libspirv-crossDebug.a in Frameworks */,
 				A0D8DF9C26D71FF90047DF48 /* libspirv-optDebug.a in Frameworks */,
@@ -615,8 +615,8 @@
 		A0D8DF9726D71FD10047DF48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A09918E52712B54B004E17FD /* libassimpd.5.0.0.dylib */,
 				A0D8E18426D919650047DF48 /* libbgfx-shared-libDebug.dylib */,
-				A0D8DF9D26D7202A0047DF48 /* libassimp.5.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -698,7 +698,7 @@
 				A794128F9388B14FFC147A94 /* Resources */,
 				BF392570AB2DC43014BA8C75 /* Sources */,
 				89A237517596D611DE229F56 /* Frameworks */,
-				A0D8E18726D924300047DF48 /* Embed Libraries */,
+				A09918E12712B501004E17FD /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -1166,17 +1166,22 @@
 					../../../../bgfx/3rdparty/glslang,
 					/usr/local/Cellar/boost/1.76.0/include,
 					../../../../bgfx/3rdparty/glslang/glslang/Include,
-					"../../../../assimp-5.0.1/include",
+					../../../../assimp/include,
 					"../../../../bgfx/3rdparty/spirv-tools/include",
 					"../../../../bgfx/3rdparty/spirv-cross",
 					"../../../../bgfx/3rdparty/glsl-optimizer/include",
+					../../../../assimp/build/include,
 				);
 				INFOPLIST_FILE = "../../../src/runtime/tvOS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "../../../src/vistual-shader-graph/libs";
+				LIBRARY_SEARCH_PATHS = (
+					"../../../src/vistual-shader-graph/libs",
+					../../../../assimp/build/bin/Release,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "vistual-shader-graphRelease";
+				SYMROOT = ../../../scripts;
 			};
 			name = Release;
 		};
@@ -1203,17 +1208,22 @@
 					../../../../bgfx/3rdparty/glslang,
 					/usr/local/Cellar/boost/1.76.0/include,
 					../../../../bgfx/3rdparty/glslang/glslang/Include,
-					"../../../../assimp-5.0.1/include",
+					../../../../assimp/include,
 					"../../../../bgfx/3rdparty/spirv-tools/include",
 					"../../../../bgfx/3rdparty/spirv-cross",
 					"../../../../bgfx/3rdparty/glsl-optimizer/include",
+					../../../../assimp/build/include,
 				);
 				INFOPLIST_FILE = "../../../src/runtime/tvOS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "../../../src/vistual-shader-graph/libs";
+				LIBRARY_SEARCH_PATHS = (
+					"../../../src/vistual-shader-graph/libs",
+					../../../../assimp/build/bin/Debug,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "vistual-shader-graphDebug";
+				SYMROOT = ../../../scripts;
 			};
 			name = Debug;
 		};

@@ -2,6 +2,11 @@
 一款跨平台着色器编辑工具
 <a href="https://github.com/zwluoqi/mobile-visual-shader-editor/wiki/Visual-Shader">实现原理&说明</a></br>
 
+![Visual Shader PBR](https://github.com/zwluoqi/mobile-visual-shader-editor/blob/main/images/visual-shader-graph.png)
+
+
+
+
 ## 依赖项&参考项
 1.<a href="https://github.com/bkaradzic/bgfx">BGFX</a> 一款跨平台渲染器</br>
 2.<a href="https://github.com/ocornut/imgui">IMGUI</a> 一款跨平台GUI框架</br>
@@ -9,6 +14,36 @@
 4.<a href="https://github.com/assimp/assimp">assimp</a> 一款跨平台的模型加载库</br>
 5.<a href="https://github.com/btzy/nativefiledialog-extended">Native Dialog File</a> 一款跨平台的文件选择库</br>
 5.<a href="https://github.com/jagenjo/litegraph.js">litegraph</a> 一款web平台的shader graph</br>
+
+## 搭建工程
+### 1.下载工程
+mkdir vsg</br>
+cd vsg</br>
+git clone https://github.com/zwluoqi/mobile-visual-shader-editor/</br>
+git clone https://github.com/bkaradzic/bgfx</br>
+git clone https://github.com/bkaradzic/bx</br>
+git clone https://github.com/bkaradzic/assimp@5.0.0</br>
+git clone https://github.com/bkaradzic/bimg</br>
+
+### 2.生成assimp工程
+cd assimp</br>
+mkdir build</br>
+cd build</br>
+OSX: cmake .. cmake .. -G "Xcode"</br>
+WIN: cmake ..</br>
+
+### 3.安装boost库
+OSX：homebrew install boost
+WIN：vcpkg install boost
+
+### 4.关联assimp
+1.直接使用上面下载工程生成Assimp的动态库</br>
+2.或者将下载的工程关联到mobile-visual-shader-editor工程中依赖即可</br>
+*注意生成Mac APP的时候有动态库关联错误dyld: Library not loaded: @rpath/libassimp5.dylib，这是Mac自身的问题，重定向库的路径即可
+```
+# Type a script or drag a script file from your workspace to insert its path.
+install_name_tool -id @executable_path/../Frameworks/libassimpd.5.0.0.dylib libassimpd.5.0.0.dylib
+```
 
 
 
